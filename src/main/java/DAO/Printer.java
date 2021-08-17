@@ -6,7 +6,7 @@ import javax.persistence.*;
 @Table(name = "printertest")
 @NamedQueries({@NamedQuery(name = "printertest.findAll", query = "select c from Printer c")})
 public class Printer {
-    private int code;
+    private int code = 0;
     private int model;
     private char color;
     private String type;
